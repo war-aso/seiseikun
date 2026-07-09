@@ -1,0 +1,37 @@
+.flow-node {
+  cursor: move;
+}
+
+.flow-node:hover rect,
+.flow-node:hover polygon {
+  filter: brightness(0.9);
+}
+
+.flow-node.selected rect,
+.flow-node.selected polygon {
+  stroke-dasharray: 5, 5;
+}
+
+.node-text {
+  font-size: 14px;
+  fill: white;
+  font-weight: 500;
+  word-wrap: break-word;
+  white-space: normal;
+  pointer-events: none;
+}
+
+.branch-label {
+  font-size: 10px;
+  fill: #666;
+  font-weight: bold;
+  pointer-events: none;
+}
+
+.branch-label.yes {
+  fill: #4CAF50;
+}
+
+.branch-label.no {
+  fill: #f44336;
+}
